@@ -11,5 +11,5 @@ task :install do
   end
     
   FileUtils.install "gsd", "#{destination}/gsd", :mode => 0755, :verbose => true
-  FileUtils.install "distraction_sites", "#{destination}/distraction_sites", :mode => 0755, :verbose => true
+  FileUtils.install "distraction_sites", "#{destination}/distraction_sites", :mode => 0644, :verbose => true
 end
