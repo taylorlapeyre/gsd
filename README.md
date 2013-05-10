@@ -2,8 +2,8 @@
 
 ### Usage
 
-  - `sudo gsd work`   - block all sites in sites.ini
-  - `sudo gsd play`   - unblock all sites in sites.ini
+  - `sudo gsd work`   - block all sites in distraction_sites
+  - `sudo gsd play`   - unblock all sites in distraction_sites
   - `sudo gsd status` - detect if sites are currently blocked or unblocked
 
 ### Installation
