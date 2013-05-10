@@ -6,7 +6,7 @@ if ENV['USER'] != 'root'
 end
 
 if `echo $OSTYPE`.include?("linux")
-  $restart_command = "/etc/init.d/networking restart"
+  $restart_command = `uname -a`.include?("arch") ? "echo > /dev/null" : "/etc/init.d/networking restart" 
 elsif `echo $OSTYPE`.include?("darwin")
   $restart_command = "dscacheutil -flushcache"
 end
